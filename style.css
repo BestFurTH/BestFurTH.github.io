@@ -7,10 +7,16 @@
     font-family: 'Icon Font';
     src: url('assets/w95fa.woff2');
 }
+
 body{
     background-color: #c3c7cb;
     font-size: 14px;
     font-family: 'System Font';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .banner {
@@ -75,6 +81,7 @@ body{
     font-size: 12px;
     text-align: center;
     font-family: 'Icon Font';
+    color: #000;
 }
 
 .main-panel {
