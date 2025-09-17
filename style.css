@@ -9,24 +9,45 @@ body{
     font-family: 'System Font';
 }
 
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ .banner-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 .body-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 16px;
     padding: 20px;
-    position: fixed;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
+    height: auto;
 }
 
 .windows-title {
     color: white;
+    width: calc(100% + 40px);
+    display: flex;
     text-align: center;
     position: absolute;
     top: -1.4em;
+    justify-content: center;
 }
 .windows-panel {
 	border-image: url('assets/border.png');
@@ -41,11 +62,12 @@ body{
     flex-direction: column;
 	align-items: center;
     justify-content: center;
-    margin: 20px 0;
 }
 
 .windows-content {
     text-align: left;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    margin: -1px -20px -23px -20px;
 }
