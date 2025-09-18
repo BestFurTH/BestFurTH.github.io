@@ -71,6 +71,11 @@ a {
     width: 25%; 
 }
 
+.sidebar .windows-panel {
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
 .icon-hitbox {
     display: flex;
     flex-direction: column;
@@ -112,8 +117,12 @@ a {
     align-items: center;
     justify-content: center;
     width: 75%;
-    height: auto;
+}
+
+.main-panel .windows-panel {
+    width: 100%;
     padding:  0 20px 20px 20px;
+    height: auto;
 }
 
 .windows-title {
