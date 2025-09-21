@@ -83,7 +83,7 @@ h1 {
     height: auto;
 }
 
-.image {
+.avatar {
     display: flex;
     justify-content: center;
     align-items: center;
