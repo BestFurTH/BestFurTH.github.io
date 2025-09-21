@@ -10,34 +10,37 @@
 
 html {
   box-sizing: border-box;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
 }
 
-body{
+img {
+    pointer-events: none;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
     background-color: #c3c7cb;
-    font-size: 14px;
     font-family: 'System Font';
 }
 
 a {
-    color: inherit;
+    color: #0000FF;
     text-decoration: none;
 }
 
-img {
-    user-select: none;
-    -webkit-user-drag: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    touch-action: none;
+h1 {
+    font-size: 20px;
+    margin: 20px 0;
 }
 
 .title {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin: 20px 0;
 }
 
@@ -60,7 +63,7 @@ img {
     transform: translateX(-50%);
 }
 
- .banner-image {
+.banner-image {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -78,6 +81,25 @@ img {
     transform: translateX(-50%);
     max-width: 1500px;
     height: auto;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.horizontally-seperated-windows-panel-area {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin: 16px 0 0 0;
+    gap: 0 10px;
 }
 
 .sidebar {
@@ -167,6 +189,8 @@ img {
     width: calc(100% + 40px);
     display: flex;
     text-align: center;
+    font-family: 'System Font';
+    font-size: 14px;
     position: absolute;
     top: -1.4em;
     justify-content: center;
@@ -183,6 +207,15 @@ img {
     flex-direction: column;
 	align-items: center;
     justify-content: center;
+}
+
+.gray {
+    border-image: url('assets/ui/border_gray.png');
+    border-image-slice: 24 fill;
+    border-width: 24px;
+    border-style: solid;
+    font-family: 'Icon Font';
+    font-size: 16px ;
 }
 
 .windows-content {
