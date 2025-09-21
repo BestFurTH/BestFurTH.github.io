@@ -158,7 +158,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: auto;
 }
